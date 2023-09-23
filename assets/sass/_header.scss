@@ -1,0 +1,43 @@
+@use 'variables';
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 16px 24px;
+    .hamburguer-menu{
+        display: none;
+    }
+    & nav{
+        // display: none;
+        border: 1px solid #000;
+        & .back{
+            background-color: variables.$mediumGray;
+            opacity: .75;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 375px;
+            height: 100vh;
+        }
+        & .front{
+            padding: 20px;
+            background-color: variables.$almostWhite;
+            width: 240px;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            & .close-btn-container{
+                text-align: right;
+                cursor: pointer;
+            }
+            & li{
+                list-style: none;
+                cursor: pointer;
+                margin-bottom: 26px;
+            }
+        }
+
+    }
+}
