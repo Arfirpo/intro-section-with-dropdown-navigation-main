@@ -1,0 +1,59 @@
+@use 'variables';
+
+main{
+    display: flex;
+    flex-direction: column;
+    & .banner-mobile{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    & h1{
+        text-align: center;
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    }
+    & p{
+        text-align: center;
+        line-height: 1.625rem;
+        margin: 0 1rem 1.5rem;
+        color: variables.$mediumGray;
+        font-size: 1rem;
+    }
+    & button{
+        display: block;
+        background-color: variables.$almostBlack;
+        color: variables.$almostWhite;
+        width: 136px;
+        height: 48px;
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-bottom: 52px;
+        &:hover{
+            cursor: pointer;
+            color: variables.$almostBlack;
+            background-color: variables.$almostWhite;
+            border: 1px solid variables.$almostBlack;
+        }
+
+    }
+    & .clients{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        & .client-logo{
+            &#databiz{
+                width: 81px;
+            }
+            &#audiophile{
+                width: 52px;
+            }
+            &#meet{
+                width: 64px;
+            }
+            &#maker{
+                width: 59px;
+            }
+        }
+    }
+}

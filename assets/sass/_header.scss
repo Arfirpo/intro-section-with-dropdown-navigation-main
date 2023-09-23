@@ -7,19 +7,20 @@ header{
     align-items: center;
     margin: 16px 16px 24px;
     .hamburguer-menu{
-        display: none;
+        // display: none;
     }
     & nav{
-        // display: none;
+        display: none;
         border: 1px solid #000;
+        color: variables.$mediumGray;
         & .back{
             background-color: variables.$mediumGray;
-            opacity: .75;
+            // opacity: .75;
             position: absolute;
             left: 0;
             top: 0;
             width: 375px;
-            height: 100vh;
+            height: 780px;
         }
         & .front{
             padding: 20px;
@@ -37,7 +38,38 @@ header{
                 cursor: pointer;
                 margin-bottom: 26px;
             }
+            & .submenu-btn{
+                margin-bottom: 10px;
+                width: 110px;
+                height: 26px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 24px 0;
+            }
+            & .features-ul, .company-ul{
+                margin-left: 28px;
+            }
+            & .features-icons{
+                margin-right: 10px;
+            }
+            .nav__buttons{
+                position: absolute;
+                bottom: 124px;
+                &-login{
+                    display: block;
+                    margin: 0 auto 16px;
+                }
+                &-register{
+                    display: block;
+                    margin: 0 auto;
+                    border: 1px solid variables.$almostBlack;
+                    border-radius: 8px;
+                    width: 195px;
+                    height: 42px;
+                    border-radius: 14px;
+                }
+            }
         }
-
     }
 }

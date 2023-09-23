@@ -27,3 +27,13 @@ body{
     font-family: 'Epilogue';
     src: url(../font/Epilogue-VariableFont_wght.ttf);
 }
+
+button{
+    background-color: variables.$almostWhite;
+    font-size: 1em;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: variables.$mediumGray;
+    font-family: 'Epilogue';
+}

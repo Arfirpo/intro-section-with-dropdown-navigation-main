@@ -1,6 +1,8 @@
 @use 'variables';
 @use 'reset';
 @use 'header';
+@use 'main';
+@use 'footer';
 
 .container{
     width: 375px;

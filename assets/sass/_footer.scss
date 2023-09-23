@@ -1,0 +1,12 @@
+@use 'variables';
+
+footer{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 11px;
+    color: variables.$almostBlack;
+    margin-bottom: 96px;
+    & a{
+        text-decoration: none;
+    }
+}

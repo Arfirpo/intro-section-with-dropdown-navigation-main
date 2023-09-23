@@ -20,19 +20,36 @@
               </div>
               <ul class="hidden-bar">
                 <li>
-                  <button type="button">Features</button>
-                  <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down-icon">
-                  <ul>
-                    <li><img src="./assets/images/icon-todo.svg" alt="to-do-icon">To do List</li>
-                    <li><img src="./assets/images/icon-calendar.svg" alt="calendar-icon">Calendar</li>
-                    <li><img src="./assets/images/icon-reminders.svg" alt="remainder-icon">Reminders</li>
-                    <li><img src="./assets/images/icon-planning.svg" alt="planning-icon">Planning</li>
+                  <button type="button" class="submenu-btn">
+                    Features
+                    <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down-icon">
+                  </button>
+                  <ul class="features-ul">
+                    <li>
+                      <img class="features-icons" src="./assets/images/icon-todo.svg" alt="to-do-icon">
+                      To do List
+                    </li>
+                    <li>
+                      <img class="features-icons" src="./assets/images/icon-calendar.svg" alt="calendar-icon">
+                      Calendar
+                    </li>
+                    <li>
+                      <img class="features-icons" src="./assets/images/icon-reminders.svg" alt="remainder-icon">
+                      Reminders
+                    </li>
+                    <li>
+                      <img class="features-icons" src="./assets/images/icon-planning.svg" alt="planning-icon">
+                      Planning
+                    </li>
                   </ul>
                 </li>
                 <li>
-                  <button type="button">Company</button>
-                  <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down-icon">
-                  <ul>
+                  <button type="button" class="submenu-btn">
+                    Company
+                    <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down-icon">
+                  </button>
+                  
+                  <ul class="company-ul">
                     <li>History</li>
                     <li>Our Team</li>
                     <li>Blog</li>
@@ -40,8 +57,10 @@
                 <li>Careers</li>
                 <li>About</li>
               </ul>
-              <button type="submit">Login</button>
-              <button type="submit">Register</button>
+              <div class="nav__buttons">
+                <button type="submit" class="nav__buttons-login">Login</button>
+                <button type="submit" class="nav__buttons-register">Register</button>
+              </div>
             </div>
           </div>
         </nav>
@@ -50,7 +69,7 @@
         <picture class="banner">
           <source srcset="./assets/images/image-hero-mobile.png" media="(max-width: 639px)">
           <source srcset="./assets//images/image-hero-desktop.png" media="(min-width: 640px)">
-          <img src="./assets//images/image-hero-mobile.png" alt="banner-image">
+          <img src="./assets//images/image-hero-mobile.png" alt="banner-image" class="banner-mobile">
         </picture>
         <section>
           <h1>Make remote work</h1>
@@ -60,10 +79,10 @@
           </p>
           <button>Learn more</button>
           <div class="clients">
-            <img src="./assets/images/client-databiz.svg" alt="icon-client">
-            <img src="./assets/images/client-audiophile.svg" alt="icon-client">
-            <img src="./assets/images/client-meet.svg" alt="icon-client">
-            <img src="./assets/images/client-maker.svg" alt="icon-client">
+            <img class="client-logo" id="databiz" src="./assets/images/client-databiz.svg" alt="icon-client">
+            <img class="client-logo" id="audiophile" src="./assets/images/client-audiophile.svg" alt="icon-client">
+            <img class="client-logo" id="meet" src="./assets/images/client-meet.svg" alt="icon-client">
+            <img class="client-logo" id="maker" src="./assets/images/client-maker.svg" alt="icon-client">
           </div>
         </section>
       </main>
