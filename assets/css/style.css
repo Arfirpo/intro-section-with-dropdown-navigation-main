@@ -17,6 +17,12 @@ body {
   color: hsl(0, 0%, 8%);
 }
 
+@media (min-width: 64rem) {
+  .container {
+    position: relative;
+  }
+}
+
 @font-face {
   font-family: "Epilogue";
   src: url(../font/Epilogue-VariableFont_wght.ttf);
@@ -25,7 +31,7 @@ button {
   background-color: hsl(0, 0%, 98%);
   font-size: 1em;
   border: none;
-  padding: 5px;
+  padding: 0.3125rem;
   cursor: pointer;
   color: hsl(0, 0%, 41%);
   font-family: "Epilogue";
@@ -35,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px 16px 24px;
+  margin: 1rem 1rem 1.5rem;
 }
 header .hamburguer-menu {
   cursor: pointer;
@@ -50,17 +56,17 @@ header nav .back {
   position: absolute;
   left: 0;
   top: 0;
-  width: 375px;
-  height: 780px;
+  width: 23.4375rem;
+  height: 48.75rem;
 }
 header nav .front {
-  padding: 20px;
+  padding: 1.25rem;
   background-color: hsl(0, 0%, 98%);
-  width: 240px;
+  width: 15rem;
   position: absolute;
   right: 0;
   top: 0;
-  height: 780px;
+  height: 48.75rem;
 }
 header nav .front .close-btn-container {
   text-align: right;
@@ -69,42 +75,42 @@ header nav .front .close-btn-container {
 header nav .front li {
   list-style: none;
   cursor: pointer;
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
 }
 header nav .front .submenu-btn {
-  margin-bottom: 10px;
-  width: 110px;
-  height: 26px;
+  margin-bottom: 0.625rem;
+  width: 6.875rem;
+  height: 1.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 header nav .front .features-ul, header nav .front .company-ul {
-  margin-left: 28px;
+  margin-left: 1.75rem;
   display: none;
 }
 header nav .front .features-icons {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 header nav .front .nav__buttons {
   position: absolute;
-  bottom: 124px;
+  bottom: 7.75rem;
 }
 header nav .front .nav__buttons-login {
   display: block;
-  margin: 0 auto 16px;
+  margin: 0 auto 1rem;
 }
 header nav .front .nav__buttons-register {
   display: block;
   margin: 0 auto;
-  border: 1px solid hsl(0, 0%, 8%);
-  border-radius: 8px;
-  width: 195px;
-  height: 42px;
-  border-radius: 14px;
+  border: 0.0625rem solid hsl(0, 0%, 8%);
+  border-radius: 0.5rem;
+  width: 12.1875rem;
+  height: 2.625rem;
+  border-radius: 0.875rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   header .hamburguer-menu {
     display: none;
   }
@@ -112,7 +118,7 @@ header nav .front .nav__buttons-register {
     display: block;
     width: 100%;
     height: 100%;
-    margin-left: 24px;
+    margin-left: 1.5rem;
     position: relative;
   }
   header nav .back {
@@ -134,7 +140,7 @@ header nav .front .nav__buttons-register {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 378px;
+    width: 23.625rem;
   }
   header nav .front li {
     margin: 0;
@@ -144,48 +150,48 @@ header nav .front .nav__buttons-register {
   }
   header nav .front .features-ul, header nav .front .company-ul {
     background-color: hsl(0, 0%, 98%);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     position: absolute;
-    top: 42px;
+    top: 2.625rem;
     font-size: 0.9rem;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-    padding: 18px 24px;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.15);
+    padding: 1.125rem 1.5rem;
   }
   header nav .front .features-ul li, header nav .front .company-ul li {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   header nav .front .features-ul .features-icons, header nav .front .company-ul .features-icons {
     margin: 0;
   }
   header nav .front .features-ul {
-    width: 140px;
-    left: -45px;
-    height: 160px;
+    width: 8.75rem;
+    left: -2.8125rem;
+    height: 10rem;
   }
   header nav .front .company-ul {
-    width: 120px;
-    left: 100px;
-    height: 115px;
+    width: 7.5rem;
+    left: 6.25rem;
+    height: 7.1875rem;
   }
   header nav .front .nav__buttons {
     display: flex;
     position: static;
     justify-content: space-between;
-    width: 182px;
+    width: 11.375rem;
   }
   header nav .front .nav__buttons button {
     margin: 0;
   }
   header nav .front .nav__buttons .nav__buttons-register {
-    width: 104px;
+    width: 6.5rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   header {
-    margin: 21px 80px 67px;
+    margin: 1.3125rem 5rem 4.1875rem;
   }
   header nav {
-    margin-left: 48px;
+    margin-left: 3rem;
   }
 }
 
@@ -213,118 +219,131 @@ main button {
   display: block;
   background-color: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
-  width: 136px;
-  height: 48px;
-  border-radius: 15px;
+  width: 8.5rem;
+  height: 3rem;
+  border-radius: 0.9375rem;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 3.25rem;
 }
 main button:hover {
   cursor: pointer;
   color: hsl(0, 0%, 8%);
   background-color: hsl(0, 0%, 98%);
-  border: 1px solid hsl(0, 0%, 8%);
+  border: 0.0625rem solid hsl(0, 0%, 8%);
 }
 main .clients {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 main .clients .client-logo#databiz {
-  width: 81px;
+  width: 5.0625rem;
 }
 main .clients .client-logo#audiophile {
-  width: 52px;
+  width: 3.25rem;
 }
 main .clients .client-logo#meet {
-  width: 64px;
+  width: 4rem;
 }
 main .clients .client-logo#maker {
-  width: 59px;
+  width: 3.6875rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   main picture {
     width: 80%;
-    margin: 24px auto;
+    margin: 1.5rem auto;
   }
   main picture .banner-mobile {
     margin-bottom: 0;
   }
   main p {
-    width: 600px;
+    width: 37.5rem;
     font-size: 1.125rem;
-    margin: 40px auto;
+    margin: 2.5rem auto;
   }
   main h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   main button {
-    width: 163px;
-    height: 56px;
+    width: 10.1875rem;
+    height: 3.5rem;
     font-size: 1.125rem;
-    margin-bottom: 46px;
+    margin-bottom: 2.875rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   main {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 0 120px 20px 115px;
+    margin: 0 7.5rem 1.25rem 7.1875rem;
   }
   main picture {
-    width: 400px;
+    width: 25rem;
     margin: 0;
   }
   main h2 {
     text-align: left;
     font-size: 2.9em;
-    width: 350px;
-    margin: 100px 0 48px;
+    width: 21.875rem;
+    margin: 6.25rem 0 3rem;
   }
   main p {
     text-align: left;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    width: 300px;
-    margin: 0 0 25px;
+    width: 18.75rem;
+    margin: 0 0 1.5625rem;
   }
   main button {
-    margin: 0 0 116px;
+    margin: 0 0 7.25rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   main picture {
-    width: 400px;
+    width: 25rem;
     margin: 0;
   }
   main h2 {
     text-align: left;
     font-size: 4.5em;
-    width: 549px;
-    margin: 100px 0 48px;
+    width: 34.3125rem;
+    margin: 6.25rem 0 3rem;
   }
   main p {
     text-align: left;
     font-size: 1.125rem;
     font-weight: 500;
-    width: 400px;
-    margin: 0 0 25px;
+    width: 25rem;
+    margin: 0 0 1.5625rem;
   }
   main button {
-    margin: 0 0 116px;
+    margin: 0 0 7.25rem;
   }
 }
 
 footer {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
   text-align: center;
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: hsl(0, 0%, 8%);
-  margin-bottom: 96px;
 }
 footer a {
   text-decoration: none;
+}
+@media (min-width: 64rem) {
+  footer {
+    bottom: 0.3125rem;
+    right: 8.75rem;
+    position: absolute;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 90rem) {
+  footer {
+    right: 8.125rem;
+    bottom: 0.625rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

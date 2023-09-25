@@ -23,16 +23,16 @@ main{
         display: block;
         background-color: variables.$almostBlack;
         color: variables.$almostWhite;
-        width: 136px;
-        height: 48px;
-        border-radius: 15px;
+        width: 8.5rem;
+        height: 3rem;
+        border-radius: .9375rem;
         margin: 0 auto;
-        margin-bottom: 52px;
+        margin-bottom: 3.25rem;
         &:hover{
             cursor: pointer;
             color: variables.$almostBlack;
             background-color: variables.$almostWhite;
-            border: 1px solid variables.$almostBlack;
+            border: .0625rem solid variables.$almostBlack;
         }
 
     }
@@ -40,90 +40,90 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 16px;
+        padding: 0 1rem;
         & .client-logo{
             &#databiz{
-                width: 81px;
+                width: 5.0625rem;
             }
             &#audiophile{
-                width: 52px;
+                width: 3.25rem;
             }
             &#meet{
-                width: 64px;
+                width: 4rem;
             }
             &#maker{
-                width: 59px;
+                width: 3.6875rem;
             }
         }
     }
-    @media (min-width:768px) {
+    @media (min-width:48rem) {
         & picture{
             width: 80%;
-            margin: 24px auto;
+            margin: 1.5rem auto;
             & .banner-mobile{
                 margin-bottom: 0;
             }
         }
         & p{
-            width: 600px;
+            width: 37.5rem;
             font-size: 1.125rem;
-            margin: 40px auto;
+            margin: 2.5rem auto;
         }
         h2{
-            font-size: 42px;
+            font-size: 2.625rem;
         }
         & button{
-            width: 163px;
-            height: 56px;
+            width: 10.1875rem;
+            height: 3.5rem;
             font-size: 1.125rem;
-            margin-bottom: 46px;
+            margin-bottom: 2.875rem;
         }
     }
-    @media (min-width:1024px) {
+    @media (min-width:64rem) {
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin: 0 120px 20px 115px;
+        margin: 0 7.5rem 1.25rem 7.1875rem;
         & picture{
-            width: 400px;
+            width: 25rem;
             margin: 0;
         }
         & h2{
             text-align: left;
             font-size: 2.9em;
-            width: 350px;
-            margin: 100px 0 48px;
+            width: 21.875rem;
+            margin: 6.25rem 0 3rem;
         }
         & p{
             text-align: left;
-            font-size: 15px;
+            font-size: .9375rem;
             font-weight: 500;
-            width: 300px;
-            margin: 0 0 25px;
+            width: 18.75rem;
+            margin: 0 0 1.5625rem;
         }
         & button{
-            margin: 0 0 116px;
+            margin: 0 0 7.25rem;
         }        
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 90rem) {
         & picture{
-            width: 400px;
+            width: 25rem;
             margin: 0;
         }
         & h2{
             text-align: left;
             font-size: 4.5em;
-            width: 549px;
-            margin: 100px 0 48px;
+            width: 34.3125rem;
+            margin: 6.25rem 0 3rem;
         }
         & p{
             text-align: left;
             font-size: 1.125rem;
             font-weight: 500;
-            width: 400px;
-            margin: 0 0 25px;
+            width: 25rem;
+            margin: 0 0 1.5625rem;
         }
         & button{
-            margin: 0 0 116px;
+            margin: 0 0 7.25rem;
         }
     }
 }

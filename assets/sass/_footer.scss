@@ -1,12 +1,21 @@
 @use 'variables';
 
 footer{
-    margin-top: 15px;
+    margin-top: .9375rem;
     text-align: center;
-    font-size: 11px;
+    font-size: .6875rem;
     color: variables.$almostBlack;
-    margin-bottom: 96px;
     & a{
         text-decoration: none;
+    }
+    @media (min-width:64rem) {
+        bottom: .3125rem;
+        right: 8.75rem;
+        position: absolute;
+        font-size: .875rem;
+    }
+    @media (min-width:90rem) {
+        right: 8.125rem;
+        bottom: .625rem;
     }
 }
