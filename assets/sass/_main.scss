@@ -7,7 +7,7 @@ main{
         width: 100%;
         margin-bottom: 3rem;
     }
-    & h1{
+    & h2{
         text-align: center;
         font-size: 2.25rem;
         margin-bottom: 1rem;
@@ -54,6 +54,54 @@ main{
             &#maker{
                 width: 59px;
             }
+        }
+    }
+    @media (min-width:768px) {
+        & picture{
+            width: 80%;
+            margin: 24px auto;
+            & .banner-mobile{
+                margin-bottom: 0;
+            }
+        }
+        & p{
+            width: 600px;
+            font-size: 1.125rem;
+            margin: 40px auto;
+        }
+        h2{
+            font-size: 42px;
+        }
+        & button{
+            width: 163px;
+            height: 56px;
+            font-size: 1.125rem;
+            margin-bottom: 46px;
+        }
+    }
+    @media (min-width:1024px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0 180px 20px 165px;
+        & picture{
+            width: 400px;
+            margin: 0;
+        }
+        & h2{
+            text-align: left;
+            font-size: 3.5em;
+            width: 420px;
+            margin: 100px 0 48px;
+        }
+        & p{
+            text-align: left;
+            font-size: 1.125rem;
+            font-weight: 500;
+            width: 400px;
+            margin: 0 0 25px;
+        }
+        & button{
+            margin: 0 0 116px;
         }
     }
 }

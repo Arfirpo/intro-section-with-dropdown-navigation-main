@@ -11,16 +11,17 @@
     <div class="container">
       <header>
         <img src="./assets/images/logo.svg" alt="snap-logo">
-        <img class="hamburguer-menu" src="./assets/images/icon-menu.svg" alt="icon-menu">
-        <nav class="navbar">  
+        <img id="hamburguer-menu" class="hamburguer-menu" src="./assets/images/icon-menu.svg" alt="icon-menu">
+        <nav id="navbar">  
           <div class="back">
-            <div class="front">
+          </div>
+          <div class="front">
               <div class="close-btn-container">
                 <img id="close-btn" src="./assets/images/icon-close-menu.svg" alt="close-menu-icon">
               </div>
               <ul class="hidden-bar">
                 <li>
-                  <button type="button" class="submenu-btn">
+                  <button id="feature-btn" type="button" class="submenu-btn">
                     Features
                     <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down-icon">
                   </button>
@@ -44,7 +45,7 @@
                   </ul>
                 </li>
                 <li>
-                  <button type="button" class="submenu-btn">
+                  <button id="company-btn" type="button" class="submenu-btn">
                     Company
                     <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down-icon">
                   </button>
@@ -61,21 +62,19 @@
                 <button type="submit" class="nav__buttons-login">Login</button>
                 <button type="submit" class="nav__buttons-register">Register</button>
               </div>
-            </div>
           </div>
         </nav>
       </header>
       <main>
         <picture class="banner">
           <source srcset="./assets/images/image-hero-mobile.png" media="(max-width: 639px)">
-          <source srcset="./assets//images/image-hero-desktop.png" media="(min-width: 640px)">
+          <source srcset="./assets//images/image-hero-desktop.png" media="(min-width: 1023px)">
           <img src="./assets//images/image-hero-mobile.png" alt="banner-image" class="banner-mobile">
         </picture>
         <section>
-          <h1>Make remote work</h1>
+          <h2>Make remote work</h2>
           <p>
-            Get your team in sync, no matter your location. Streamline processes,
-            create team rituals, and watch productivity soar.
+            Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
           </p>
           <button>Learn more</button>
           <div class="clients">
@@ -91,5 +90,6 @@
         Coded by <a href="https://www.frontendmentor.io/profile/Arfirpo" target="_blank">Agustín R. FIrpo</a>
       </footer>
     </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
