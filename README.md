@@ -1,91 +1,106 @@
+Hi everybody! 👋
+
 # Frontend Mentor - Intro section with dropdown navigation solution
 
-This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5).
 
-## Table of contents
+## Table of contents 🧾
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-
 
 ## Overview
 
-### The challenge
+### The challenge 🎯
 
 Users should be able to:
 
 - View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
-![](./assets/images/mobile-dropdown-menu-close.jpg)
+
+navbar w/ sub-menus close:
+
+![Menu with Sub Menu close](./assets/images/mobile-dropdown-menu-close.jpg)
+
+navbar w/ sub-menus open:
+
+![Menu with Sub Menu open](./assets/images/mobile-dropdown-menu-open.jpg)
 
 - View the optimal layout for the content depending on their device's screen size
 
 mobile design:
-![](./assets/images/mobile-design.jpg)
+
+![Mobile Design](./assets/images/mobile-design.jpg)
 
 desktop design:
-![](./assets/images/desktop-design.jpg)
 
+![Desktop Design](./assets/images/desktop-design.jpg)
 
 - See hover states for all interactive elements on the page
 
-### Screenshot
+button Hover:
 
+![Hover](./assets/images/mobile-hover-state.png)
 
+### Links 🔗
 
-### Links
+- Solution: [Github Repository](https://github.com/Arfirpo/intro-section-with-dropdown-navigation-main)
+- Solution: [Github PAge](https://arfirpo.github.io/intro-section-with-dropdown-navigation-main/)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+## My process ⚙️
 
-## My process
-
-### Built with
+### Built with 🛠️
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Sass](https://sass-lang.com/) - Css preprocessor
+- Javascript
 
-### What I learned
+### What I learned 📚
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this challenge i had the oportunity to improve my handdle of javascript.
+Particulary i learned how to design (in HTML) a completly functional menu with a sub-menu included, - how to toggle the display of my css (sass in this case) for show & hide my page´s navbar: 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+//opening the navbar
+hamburguerMenu.addEventListener('click', ()=>{
+    hamburguerMenu.style.display = 'none';
+    navBar.style.display = 'block';
+});
+
+// closing the navbar
+closeBtn.addEventListener('click', ()=>{
+    screenSize = window.innerWidth;
+    if(screenSize >= 768){
+        navBar.style.display = 'block';
+        hamburguerMenu.style.display = 'none';
+    } else {
+        hamburguerMenu.style.display = 'block';  
+        navBar.style.display = 'none';
+    }
+});
 ```
 
-### Continued development
+Furthermore i had the chance to use, for the very first time, ternary operators to reduce the length of the functions codes.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+```js
+//using the ternary operator to make the navbar appear/hide when clicked in a certain place
+featureSubMenu.style.display = (featureSubMenu.style.display === 'block') ? 'none' : 'block';
+```
+Also i learned how to set the transform/transition properties from js (to add moving at the arrow icons in the sub menues)
 
-## Author
+```js
+featureBtnArrow.style.transition = 'transform .3s ease';
+```
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+## Author 🙋🏻‍♂️
+
+- Twitter/X - [@agus_firpo](https://twitter.com/agus_firpo)
+- Frontend Mentor - [@Arfirpo](https://www.frontendmentor.io/profile/Arfirpo)
+- Linkedin - [Agustín Rodrigo Firpo](https://www.linkedin.com/in/agustin-rodrigo-firpo-0aa86697/)
