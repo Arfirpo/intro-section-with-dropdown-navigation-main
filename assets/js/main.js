@@ -19,13 +19,11 @@ closeBtn.addEventListener('click', ()=>{
     screenSize = window.innerWidth;
     if(screenSize >= 768){
         navBar.style.display = 'block';
-        hamburguerMenu.style.display = 'none';  
-
+        hamburguerMenu.style.display = 'none';
     } else {
         hamburguerMenu.style.display = 'block';  
         navBar.style.display = 'none';
     }
-    
 });
 
 //opening the feature sub-menu
