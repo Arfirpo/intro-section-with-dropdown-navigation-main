@@ -15,7 +15,6 @@ body {
   font-family: "Epilogue";
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 8%);
-  overflow: hidden;
 }
 
 @font-face {
@@ -114,6 +113,7 @@ header nav .front .nav__buttons-register {
     width: 100%;
     height: 100%;
     margin-left: 24px;
+    position: relative;
   }
   header nav .back {
     display: none;
@@ -141,6 +141,31 @@ header nav .front .nav__buttons-register {
   }
   header nav .front .submenu-btn {
     margin: 0;
+  }
+  header nav .front .features-ul, header nav .front .company-ul {
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    position: absolute;
+    top: 42px;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    padding: 18px 24px;
+  }
+  header nav .front .features-ul li, header nav .front .company-ul li {
+    margin-bottom: 16px;
+  }
+  header nav .front .features-ul .features-icons, header nav .front .company-ul .features-icons {
+    margin: 0;
+  }
+  header nav .front .features-ul {
+    width: 140px;
+    left: -45px;
+    height: 160px;
+  }
+  header nav .front .company-ul {
+    width: 120px;
+    left: 100px;
+    height: 115px;
   }
   header nav .front .nav__buttons {
     display: flex;
@@ -245,7 +270,7 @@ main .clients .client-logo#maker {
   main {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 0 180px 20px 165px;
+    margin: 0 120px 20px 115px;
   }
   main picture {
     width: 400px;
@@ -253,8 +278,30 @@ main .clients .client-logo#maker {
   }
   main h2 {
     text-align: left;
-    font-size: 3.5em;
-    width: 420px;
+    font-size: 2.9em;
+    width: 350px;
+    margin: 100px 0 48px;
+  }
+  main p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    width: 300px;
+    margin: 0 0 25px;
+  }
+  main button {
+    margin: 0 0 116px;
+  }
+}
+@media (min-width: 1440px) {
+  main picture {
+    width: 400px;
+    margin: 0;
+  }
+  main h2 {
+    text-align: left;
+    font-size: 4.5em;
+    width: 549px;
     margin: 100px 0 48px;
   }
   main p {
